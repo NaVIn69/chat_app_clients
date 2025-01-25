@@ -13,7 +13,6 @@ const ChatItem = ({
   isOnline,
   index = 0,
   handleDeleteChat,
-  key,
 }) => {
   return (
     <Link
@@ -27,7 +26,7 @@ const ChatItem = ({
       key={_id}
         initial={{opacity:0,y:"-100%"}}
         whileInView={{opacity:1,y:0}}
-        exit={{ opacity: 0, y: "100%" }}
+        // exit={{ opacity: 0, y: "100%" }}
         transition={{delay:0.1*index}}
         style={{
           display: "flex",

@@ -37,7 +37,7 @@ import UserItem from '../shared/UserItem';
 
   const submitHandler =  ()=>{
    if(!groupName.value) return toast.error("Group Name is required");
-   if(selectedMembers.length<3) return toast.error("Please Select Atleast 2 Members")
+   if(selectedMembers.length<2) return toast.error("Please Select Atleast 2 Members")
 
     // creating Groups
      newGroup("Creating New Group..",{name:groupName.value,members:selectedMembers})
